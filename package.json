@@ -1,0 +1,27 @@
+{
+  "name": "glintapp",
+  "version": "1.0.0",
+  "description": "GlintApp is a cool way of writing web site and web apps.",
+  "main": "README.md",
+  "scripts": {
+    "test": "echo \"read the README first\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/glintapp/glintapp.git"
+  },
+  "keywords": [
+    "universal",
+    "isomorphic",
+    "modular",
+    "javascript",
+    "application",
+    "website"
+  ],
+  "author": "Andi Neck",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/glintapp/glintapp/issues"
+  },
+  "homepage": "https://github.com/glintapp/glintapp"
+}
