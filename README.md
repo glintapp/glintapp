@@ -1,5 +1,7 @@
 # GlintApp
 
+![GlintApp Logo](GlintApp.png)
+
 > GlintApp is a cool way of writing web site and web apps.
 
 
