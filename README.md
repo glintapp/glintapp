@@ -170,10 +170,9 @@ But there is more...
 
 
 
-# initiated by
-Andi Neck | andi.neck@intesso.com | intesso
+# author
+Andi Neck | [@andineck](https://twitter.com/andineck) | andi.neck@intesso.com | intesso
 
 # get involved
 Any Feedback is highly appreciated.
 Please create an [Issue](https://github.com/glintapp/glintapp/issues/new) or [PR](https://github.com/glintapp/glintapp/pulls).
-I'm happy to add you as a comitter too.
