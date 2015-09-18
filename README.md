@@ -140,18 +140,21 @@ There is a recommendable read on the story of normalize.io, which had the nobal 
 HTTP/2 has got an influence on how to pack, or not to pack assets for the browser with the Server Push mechanism.
 Previous best practices (like bundling javascript files) become anti patterns with HTTP/2
 
-- support: HTTP/2 is currently not supported everywhere yet
-  - there is currently no node.js core support for http2 (but in userland ther is)
-  - nginx support for example is not yet there (in process)
-  - browser support: [caniuse http/2](http://caniuse.com/#feat=http2)
+**support**
+
+- HTTP/2 is currently not supported everywhere yet
+- there is currently no node.js core support for http2 (but in userland ther is)
+- nginx support for example is not yet there (in process)
+- browser support: [caniuse http/2](http://caniuse.com/#feat=http2)
 
 #### Web Components
+Web Components can help re-using html, css, javascript, they are just a bit late, and support is still not where it should be.
+
+**further reading**
 
 - documentation: [mozilla web components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
 - browser support: [caniuse web components](http://caniuse.com/#search=web%20components)
 - Google Polymer is based on web components: [polymer](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
-
-Web Components can help re-using html, css, javascript, they are just a bit late, and support is still not where it should be.
 
 
 ## structuring the application
@@ -168,11 +171,7 @@ But there is more...
 
 
 # initiated by
-Andi Neck
-andi.neck@intesso.com
-
-# sponsored by
-intesso
+Andi Neck | andi.neck@intesso.com | intesso
 
 # get involved
 Any Feedback is highly appreciated.
