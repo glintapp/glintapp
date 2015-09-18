@@ -52,6 +52,7 @@ Small modules help solving (or avoiding) complexity. Which is great. But it does
 <video controls="" autoplay="" name="media"><source src="https://pbs.twimg.com/tweet_video/CJR5osMUAAAW0XO.mp4" type="video/mp4"></video>
 
 We can divide the modules into three levels:
+
 1. function level / like `is-browser`, to `debug`
 2. library/framework level / like `express` or `jquery`
 3. application level / `your application that solves your or your customers problems`
@@ -72,7 +73,8 @@ this section gives first a bit of a background, if you know this already, you ca
 
 **Then there is modules for node.js and modules for the browser**
 
-Now we have JavaScript on the Server with node.js and in the browsers.
+Now we have JavaScript on the Server with node.js and in the browsers:
+
 1. But how is it different?
 2. Can't we just use the same thing on the server as we use in the browser?
 
@@ -84,10 +86,9 @@ The environment is different. (here's just a few differences)
 
 Because of the differences, it's the same language, but you can't share lots between the server and the browser out of the box.
 
-You need some additional things.
+You need some additional things...
 
-
-*[component](https://github.com/componentjs/component)*
+### [component](https://github.com/componentjs/component)
 TJ Holowaychuck back in 2012 started [component](https://github.com/componentjs/component) for modules to use in the browser.
 There is also several similar things with similar names [disambiguation](https://github.com/componentjs/component/blob/master/disambiguation.md) and [comparison](https://github.com/componentjs/guide/blob/master/component/vs.md).
 It uses [github](https://github.com/) as the repository, instead of [npm](https://www.npmjs.com), and has got it's own tooling for things like installing building etc.
@@ -100,7 +101,7 @@ Before you build a browser module yourself check the existing ones on component:
 But do we really need another module registry?
 
 
-*[browserify](http://browserify.org)*
+### [browserify](http://browserify.org)
 Why not writing code for the browser as we do for the server and use a tool to make the browser happy?
 James Halliday known as substack created such a tool: [browserify](http://browserify.org)
 Browserify works really great and also solves the problem of writing reusable code for node.js and the browser.
@@ -114,6 +115,7 @@ With all the problems it solves, it has some things it does not solve by itself,
 
 Over all, it is a great thing, I am really thankful for.
 One thing I didn't mention so far is, the documentation as well as the eco system are exceptional too:
+
 - [documentation](https://github.com/substack/node-browserify#browserify)
 - [handbook](https://github.com/substack/browserify-handbook)
 - [node modules](https://github.com/substack/node-browserify#compatibility)
@@ -122,7 +124,8 @@ One thing I didn't mention so far is, the documentation as well as the eco syste
 
 
 
-*there is many package managers for the browser*
+### there is many package managers for the browser
+
 Sure there is great things you can use for the browser.
 For example [duo](http://duojs.org), [webpack](https://webpack.github.io), [bower](http://bower.io/) etc.
 
@@ -131,20 +134,23 @@ Most of them are focussed on the browser only. And don't have reusing node.js co
 There is a recommendable read on the story of normalize.io, which had the nobal goal to normalize the package management [normalize.io](http://www.jongleberry.com/the-story-of-normalize.html).
 
 
-*what about webcomponents, HTTP/2 etc.*
+### what about webcomponents, HTTP/2 etc.
 
-HTTP/2
+#### HTTP/2
 HTTP/2 has got an influence on how to pack, or not to pack assets for the browser with the Server Push mechanism.
 Previous best practices (like bundling javascript files) become anti patterns with HTTP/2
+
 - support: HTTP/2 is currently not supported everywhere yet
   - there is currently no node.js core support for http2 (but in userland ther is)
   - nginx support for example is not yet there (in process)
   - browser support: [caniuse http/2](http://caniuse.com/#feat=http2)
 
-webcomponents
+#### Web Components
+
 - documentation: [mozilla web components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
 - browser support: [caniuse web components](http://caniuse.com/#search=web%20components)
 - Google Polymer is based on web components: [polymer](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
+
 Web Components can help re-using html, css, javascript, they are just a bit late, and support is still not where it should be.
 
 
