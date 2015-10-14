@@ -6,9 +6,9 @@
 <td>
 
 <h1>GlintApp</h1>
-<pre>is a principle </pre>
-<pre>for writing modular web site and web apps </pre>
-<pre>with <a href="https://nodejs.org">node.js</a></pre>
+<pre>is a principle                                                              </pre>
+<pre>for writing modular web site and web apps                                   </pre>
+<pre>with <a href="https://nodejs.org">node.js</a>                               </pre>
 
 </td>
 </tr>
@@ -24,23 +24,27 @@ The main point is the focus for doing this at the application level:
 
 <table>
 <tr>
-<td>
+<td style="width: 50%;">
 
-# what is is
- - a way of writing modular for the server and the browser (universal javascript aka. isomorphic).
- - a guide of writing reusable applications.
- - working now, with the existing servers and browsers
- - only for the application level. see: [module levels][]
- - fun, fun , fun
+<h2>what is is</h2>
+<pre>              fun, fun , fun              </pre>
+<ul>
+<li>a way of writing modular for the server and the browser (universal javascript aka. isomorphic).</li>
+<li>a guide of writing reusable applications.</li>
+<li>working now, with the existing servers and browsers</li>
+<li>only for the application level. see: [module levels][]</li>
+</ul>
 
 </td>
-<td>
+<td style="width: 50%;">
 
-# what it is NOT
- - a framework
- - does everything for you
- - fancy
-
+<h2>what it is NOT</h2>
+<pre>                        fancy                      </pre>
+<ul>
+<li>a framework</li>
+<li>does everything for you</li>
+</ul>
+<br><br><br>
 </td>
 </tr>
 </table>
@@ -61,18 +65,18 @@ Small modules help solving (or avoiding) complexity. Which is great. But it does
 <table>
 <tr>
 <td>
-<img src="lego-modules.png" alt="Composable Modules - LEGO">
+<img src="lego-modules.gif" alt="Composable Modules - LEGO">
 found on www.gifbay.com
 </td>
 <td>
 
-<code>
-We can divide the modules into three levels:
-
-1. function level / like `is-browser`, to `debug`
-2. library/framework level / like `express` or `jquery`
-3. application level / `your application that solves your or your customers problems`
-</code>
+<h4>We can divide the modules into three levels:</h4>
+<pre>                                                                                 </pre>
+<ol>
+<li>function level / like `is-browser`, to `debug`</li>
+<li>library/framework level / like `express` or `jquery`</li>
+<li>application level / `your application that solves your or your customers problems`</li>
+</ol>
 
 </td>
 </tr>
