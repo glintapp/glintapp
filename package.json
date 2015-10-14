@@ -16,7 +16,9 @@
     "modular",
     "javascript",
     "application",
-    "website"
+    "website",
+    "glintapp",
+    "glint"
   ],
   "author": "Andi Neck",
   "license": "MIT",
