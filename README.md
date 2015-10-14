@@ -201,11 +201,11 @@ We might also ask the question:
 
 #### Do we need to structure the application at all?
 
-> No we don't need to.
+> No we don't need to .
 >
-> modularize instead of structure
+> modularize ..
 >
-> enter GlintApp &#9094;
+> enter GlintApp &#9094; ...
 
 
 
@@ -270,7 +270,15 @@ Here's an example of how you can scructue your modules.
 - the browser only get's the `upper arrows`,
 - and the server the `lower arrows`
 
-as you can see, there is browser specific files, server specific ones and commonly (shared) files as well, no matter where in the module hierarchy they are used.
+As you can see in the following example, there is browser specific files, server specific ones and commonly (shared) files as well, no matter where in the module hierarchy they are used.
+
+> this is truly universal javascript (or isomorphic or whatever...)!
+
+> same style on the server as well as in the browser, yay! Big Hug to: [@substack](http://substack.net)
+
+wait, but it all depends on browserify. True, BUT if bundling is not needed anymore in the same way with HTTP/2, you can still follow this structure and come up with something that handles it for the new environment.
+
+**ok, here's the example**
 
 ```
                                  +-----------------------+
