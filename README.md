@@ -6,9 +6,9 @@
 <td>
 
 <h1>GlintApp</h1>
-<pre>. is a principle                                                              </pre>
-<pre>.. for writing modular web site and web apps                                  </pre>
-<pre>... with <a href="https://nodejs.org">node.js</a>                             </pre>
+<pre>. is a principle                                                  </pre>
+<pre>.. for writing modular web site and web apps                      </pre>
+<pre>... with <a href="https://nodejs.org">node.js</a>                 </pre>
 
 </td>
 </tr>
@@ -27,7 +27,7 @@ The main point is the focus for doing this at the application level:
 <td style="width: 50%;">
 
 <h2>what is is</h2>
-<pre>              fun, fun , fun              </pre>
+<pre>             fun, fun , fun              </pre>
 <ul>
 <li>a way of writing modular for the server and the browser (universal javascript aka. isomorphic).</li>
 <li>a guide of writing reusable applications.</li>
@@ -39,12 +39,12 @@ The main point is the focus for doing this at the application level:
 <td style="width: 50%;">
 
 <h2>what it is NOT</h2>
-<pre>                        fancy                      </pre>
+<pre>                fancy                    </pre>
 <ul>
 <li>a framework</li>
 <li>does everything for you</li>
 </ul>
-<br><br><br><br>
+<br><br><br><br><br><br>
 </td>
 </tr>
 </table>
@@ -71,7 +71,7 @@ found on www.gifbay.com
 <td>
 
 <h4>We can divide the modules into three levels:</h4>
-<pre>                               level me up                                      </pre>
+<pre>                                 level me up                                   </pre>
 <ol>
 <li>function level / like `is-browser`, to `debug`</li>
 <li>library/framework level / like `express` or `jquery`</li>
@@ -95,7 +95,7 @@ Lets first look at node.js and the browser and then come back to how to compose 
 
 ## TL;DR
 
-if you want to take a shortcut to the `how` and skip the `why`, jump to : [Steps to a GlintApp Galaxy]
+if you want to take a shortcut to the `how` and skip the `why`, jump to : [Steps to a GlintApp Galaxy](#Steps-to-a-GlintApp-Galaxy)
 
 
 ## node.js and the browser
@@ -216,31 +216,31 @@ We might also ask the question:
 # Steps to a GlintApp Galaxy
 
 
-     [1. develop small modules, that contain server as well as browser code][]
+[1. develop small modules, that contain server as well as browser code](#1)
 
-     [2. every module must declare it's dependencies][]
+[2. every module must declare it's dependencies](#2)
 
-     [3. make the modules configurable with a default configuration and an options argument][]
+[3. make the modules configurable with a default configuration and an options argument](#3)
 
-     [4. use widely supported javascript (concerning the browser)[]
+[4. use widely supported javascript (concerning the browser)](#4)
 
-     [5. if you use transpiler/compiler, make sure you provide the compiled code also][]
+[5. if you use transpiler/compiler, make sure you provide the compiled code also](#5)
 
-     [6. assets go into the public folder of your module][]
+[6. assets go into the public folder of your module](#6)
 
-     [7. define the server technology for your GlintApp Galaxy][]
+[7. define the server technology for your GlintApp Galaxy](#7)
 
-     [8. define commonly used modules for common concepts][]
+[8. define commonly used modules for common concepts](#8)
 
-     [9. require no special environment settings][]
+[9. require no special environment settings](#9)
 
 
-> thats it.
+> that's it.
 >
 > what follows is just an explanation of these steps...
 
 
-# [1. develop small modules, that contain server as well as browser code]
+# 1. develop small modules, that contain server as well as browser code
 
 > - in your module's package.json declare the entry point for the server (as always)
 > - and the entry point for the browser (looked at by browserify)
@@ -254,6 +254,7 @@ We might also ask the question:
 > ```
 > if your module requires special transformations, declare them in the browserify field:
 
+  ```
   ...
   "browserify": {
     "transform": [
@@ -340,11 +341,11 @@ created with [asciiflow](http://asciiflow.com)
 
 
 
-# [2. every module must declare it's dependencies]
+# 2. every module must declare it's dependencies
 
 > declare them in `dependencies` and `devDependencies`
 
-# [3. make the modules configurable with a default configuration and an options argument]
+# 3. make the modules configurable with a default configuration and an options argument
 
 > write the module configuration in it's own file e.g. with a configuration file like `config.js`
 
@@ -352,32 +353,32 @@ created with [asciiflow](http://asciiflow.com)
 
 TODO e.g.
 
-# [4. use widely supported javascript (concerning the browser)
+# 4. use widely supported javascript (concerning the browser)
 
 > be supporting, being a bit conservative might not be wrong here (depending on your Universe)
 
-# [5. if you use transpiler/compiler, make sure you provide the compiled code also]
+# 5. if you use transpiler/compiler, make sure you provide the compiled code also
 
 > do not throw internal complexities (which should not exist anyway :-) on to the consumer
 
-# [6. assets go into the public folder of your module]
+# 6. assets go into the public folder of your module
 
 > this lets the GlintApp Universe bundle the assets. e.g. with [assets-bundler](https://github.com/intesso/assets-bundler)
 
-# [7. define the server technology for your GlintApp Universe]
+# 7. define the server technology for your GlintApp Universe
 
 > as much as we like to support everything, architecture also means to make decisions, also to limit our selves to solve the actual problems.
 > e.g. [Express](http://expressjs.com/) or [hapi](http://hapijs.com/) etc.
 
 
-# [8. define commonly used modules for common concepts][]
+# 8. define commonly used modules for common concepts
 
 > when you design a system, it consists of *structure*s and *concept*s. See [arc42](http://www.arc42.org).
 > typically you want to follow consistent concepts in the different parts of the system (modules). e.g. consistent Logging mechanism.
 > Therefore, make known the conceptual modules, the individual modules shall require.
 
 
-# [9. require no special environment settings]
+# 9. require no special environment settings
 
 > be a good neighbour.
 
