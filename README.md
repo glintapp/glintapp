@@ -27,7 +27,7 @@ The main point is the focus for doing this at the application level:
 <td>
 
 <h2>what is is</h2>
-<pre>             fun, fun , fun              </pre>
+<pre>            fun, fun , fun             </pre>
 <ul>
 <li>a way of writing modular for the server and the browser (universal javascript aka. isomorphic).</li>
 <li>a guide of writing reusable applications.</li>
@@ -39,7 +39,7 @@ The main point is the focus for doing this at the application level:
 <td>
 
 <h2>what it is NOT</h2>
-<pre>                fancy                    </pre>
+<pre>               fancy                   </pre>
 <ul>
 <li>a framework</li>
 <li>does everything for you</li>
@@ -73,9 +73,9 @@ found on www.gifbay.com
 <h4>We can divide the modules into three levels:</h4>
 <pre>                         level me up                                </pre>
 <ol>
-<li>function level / like `is-browser`, to `debug`</li>
-<li>library/framework level / like `express` or `jquery`</li>
-<li>application level / `your application that solves your or your customers problems`</li>
+<li>function level / like <code>is-browser</code>, to <code>debug</code></li>
+<li>library/framework level / like <code>express</code> or <code>jquery</code></li>
+<li>application level / <code>your application that solves your or your customers problems</code></li>
 </ol>
 
 </td>
@@ -205,12 +205,11 @@ We might also ask the question:
 
 #### Do we need to structure the application at all?
 
-> No we don't need to .
+> . No we don't need to
 >
-> modularize ..
+> .. modularize
 >
-> enter GlintApp &#9094; ...
-
+> ... enter GlintApp [&#9094;](#steps-to-a-glintapp-galaxy)
 
 
 # Steps to a GlintApp Galaxy
@@ -350,13 +349,13 @@ created with [asciiflow](http://asciiflow.com)
 **function example:**
 ```js
 var defaults = require('defaults');
-var c = require('./config');
+var config = require('./config');
 
 /**
  * Expose MyModule
  */
-module.exports = function myModule(o) {
-  o = defaults(o, c);
+module.exports = function myModule(options) {
+  options = defaults(options, config);
   // ...
 }
 ```
@@ -364,6 +363,8 @@ module.exports = function myModule(o) {
 **constructor example:**
 ```js
 var EventEmitter = require('events').EventEmitter;
+var merge = require('utils-merge');
+var config = require('./config');
 
 /**
  * Expose MyModule
@@ -378,6 +379,7 @@ inherits(MyModule, EventEmitter);
 
 function MyModule(options) {
   if (!(this instanceof MyModule)) return new MyModule(options);
+  merge(this, config);
   merge(this, options);
   // ...
 }
@@ -404,6 +406,7 @@ function MyModule(options) {
 
 > when you design a system, it consists of *structure*s and *concept*s. See [arc42](http://www.arc42.org).
 > typically you want to follow consistent concepts in the different parts of the system (modules). e.g. consistent Logging mechanism.
+>
 > Therefore, make known the conceptual modules, the individual modules shall require.
 
 ### 9. require no special environment settings
