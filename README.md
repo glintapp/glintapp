@@ -252,7 +252,6 @@ We might also ask the question:
   ...
 ```
 > if your module requires special transformations, declare them in the browserify field:
-
 ```
   ...
   "browserify": {
@@ -348,7 +347,41 @@ created with [asciiflow](http://asciiflow.com)
 
 > when requiring the module, allow overriding of the default configurations:
 
-TODO e.g.
+**function example:**
+```js
+var defaults = require('defaults');
+var c = require('./config');
+
+/**
+ * Expose MyModule
+ */
+module.exports = function myModule(o) {
+  o = defaults(o, c);
+  // ...
+}
+```
+
+**constructor example:**
+```js
+var EventEmitter = require('events').EventEmitter;
+
+/**
+ * Expose MyModule
+ */
+exports = module.exports = MyModule;
+inherits(MyModule, EventEmitter);
+
+/**
+ * Initialize a new `MyModule` element.
+ * @param {Object} options object
+ */
+
+function MyModule(options) {
+  if (!(this instanceof MyModule)) return new MyModule(options);
+  merge(this, options);
+  // ...
+}
+```
 
 ### 4. use widely supported javascript (concerning the browser)
 
