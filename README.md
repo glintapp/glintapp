@@ -71,7 +71,7 @@ found on www.gifbay.com
 <td>
 
 <h4>We can divide the modules into three levels:</h4>
-<pre>                                 level me up                                   </pre>
+<pre>                         level me up                                </pre>
 <ol>
 <li>function level / like `is-browser`, to `debug`</li>
 <li>library/framework level / like `express` or `jquery`</li>
@@ -245,16 +245,15 @@ We might also ask the question:
 > - in your module's package.json declare the entry point for the server (as always)
 > - and the entry point for the browser (looked at by browserify)
 >
-> ```
+```
   ...
   "main": "server.js",
   "browser": "browser.js",
   ...
-
-> ```
+```
 > if your module requires special transformations, declare them in the browserify field:
 
-  ```
+```
   ...
   "browserify": {
     "transform": [
@@ -263,9 +262,7 @@ We might also ask the question:
     ]
   },
   ...
-
-> ```
->
+```
 
 but does that work at the application level ?
 
@@ -286,6 +283,7 @@ wait, but it all depends on browserify. True, BUT if bundling is not needed anym
 **ok, here's the example**
 
 ```
+
                                  +-----------------------+
                                  | blog                  |
                                  +-----------------------+          +-----------------------+
@@ -334,7 +332,6 @@ wait, but it all depends on browserify. True, BUT if bundling is not needed anym
                                 |                       |
                                 |                       |
                                 +-----------------------+
-
 
 ```
 created with [asciiflow](http://asciiflow.com)
