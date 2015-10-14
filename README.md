@@ -6,9 +6,9 @@
 <td>
 
 <h1>GlintApp</h1>
-<pre>is a principle                                                              </pre>
-<pre>for writing modular web site and web apps                                   </pre>
-<pre>with <a href="https://nodejs.org">node.js</a>                               </pre>
+<pre>. is a principle                                                              </pre>
+<pre>.. for writing modular web site and web apps                                  </pre>
+<pre>... with <a href="https://nodejs.org">node.js</a>                             </pre>
 
 </td>
 </tr>
@@ -32,7 +32,7 @@ The main point is the focus for doing this at the application level:
 <li>a way of writing modular for the server and the browser (universal javascript aka. isomorphic).</li>
 <li>a guide of writing reusable applications.</li>
 <li>working now, with the existing servers and browsers</li>
-<li>only for the application level. see: [module levels][]</li>
+<li>only for the application level. see: <a href="#module-levels">module levels</a></li>
 </ul>
 
 </td>
@@ -44,7 +44,7 @@ The main point is the focus for doing this at the application level:
 <li>a framework</li>
 <li>does everything for you</li>
 </ul>
-<br><br><br>
+<br><br><br><br>
 </td>
 </tr>
 </table>
@@ -57,8 +57,8 @@ The whole environment encourages you to use and write many small modules, and no
 It just takes a couple of minutes, (or even less than a minute with tools at hand) to write a __hello world__ module, test it and publish it.
 Comming from the Java world, this surely is an improvement.
 
-
 Small modules help solving (or avoiding) complexity. Which is great. But it does not stop with small modules. Modules are composed again.
+
 
 ## module levels
 
@@ -71,7 +71,7 @@ found on www.gifbay.com
 <td>
 
 <h4>We can divide the modules into three levels:</h4>
-<pre>                                                                                 </pre>
+<pre>                               level me up                                      </pre>
 <ol>
 <li>function level / like `is-browser`, to `debug`</li>
 <li>library/framework level / like `express` or `jquery`</li>
