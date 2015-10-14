@@ -24,7 +24,7 @@ The main point is the focus for doing this at the application level:
 
 <table>
 <tr>
-<td style="width: 50%;">
+<td>
 
 <h2>what is is</h2>
 <pre>             fun, fun , fun              </pre>
@@ -36,7 +36,7 @@ The main point is the focus for doing this at the application level:
 </ul>
 
 </td>
-<td style="width: 50%;">
+<td>
 
 <h2>what it is NOT</h2>
 <pre>                fancy                    </pre>
@@ -95,7 +95,7 @@ Lets first look at node.js and the browser and then come back to how to compose 
 
 ## TL;DR
 
-if you want to take a shortcut to the `how` and skip the `why`, jump to : [Steps to a GlintApp Galaxy](#Steps-to-a-GlintApp-Galaxy)
+if you want to take a shortcut to the `how` and skip the `why`, jump to : [Steps to a GlintApp Galaxy](#steps-to-a-glintapp-galaxy)
 
 
 ## node.js and the browser
@@ -216,23 +216,23 @@ We might also ask the question:
 # Steps to a GlintApp Galaxy
 
 
-[1. develop small modules, that contain server as well as browser code](#1)
+[1. develop small modules, that contain server as well as browser code](#1-develop-small-modules-that-contain-server-as-well-as-browser-code)
 
-[2. every module must declare it's dependencies](#2)
+[2. every module must declare it's dependencies](#2-every-module-must-declare-its-dependencies)
 
-[3. make the modules configurable with a default configuration and an options argument](#3)
+[3. make the modules configurable with a default configuration and an options argument](#3-make-the-modules-configurable-with-a-default-configuration-and-an-options-argument)
 
-[4. use widely supported javascript (concerning the browser)](#4)
+[4. use widely supported javascript (concerning the browser)](#4-use-widely-supported-javascript-concerning-the-browser)
 
-[5. if you use transpiler/compiler, make sure you provide the compiled code also](#5)
+[5. if you use transpiler/compiler, make sure you provide the compiled code also](#5-if-you-use-transpilercompiler-make-sure-you-provide-the-compiled-code-also)
 
-[6. assets go into the public folder of your module](#6)
+[6. assets go into the public folder of your module](#6-assets-go-into-the-public-folder-of-your-module)
 
-[7. define the server technology for your GlintApp Galaxy](#7)
+[7. define the server technology for your GlintApp Galaxy](#7-define-the-server-technology-for-your-glintapp-universe)
 
-[8. define commonly used modules for common concepts](#8)
+[8. define commonly used modules for common concepts](#8-define-commonly-used-modules-for-common-concepts)
 
-[9. require no special environment settings](#9)
+[9. require no special environment settings](#9-require-no-special-environment-settings)
 
 
 > that's it.
@@ -240,7 +240,7 @@ We might also ask the question:
 > what follows is just an explanation of these steps...
 
 
-# 1. develop small modules, that contain server as well as browser code
+### 1. develop small modules, that contain server as well as browser code
 
 > - in your module's package.json declare the entry point for the server (as always)
 > - and the entry point for the browser (looked at by browserify)
@@ -338,11 +338,11 @@ created with [asciiflow](http://asciiflow.com)
 
 
 
-# 2. every module must declare it's dependencies
+### 2. every module must declare it's dependencies
 
 > declare them in `dependencies` and `devDependencies`
 
-# 3. make the modules configurable with a default configuration and an options argument
+### 3. make the modules configurable with a default configuration and an options argument
 
 > write the module configuration in it's own file e.g. with a configuration file like `config.js`
 
@@ -350,32 +350,30 @@ created with [asciiflow](http://asciiflow.com)
 
 TODO e.g.
 
-# 4. use widely supported javascript (concerning the browser)
+### 4. use widely supported javascript (concerning the browser)
 
 > be supporting, being a bit conservative might not be wrong here (depending on your Universe)
 
-# 5. if you use transpiler/compiler, make sure you provide the compiled code also
+### 5. if you use transpiler/compiler, make sure you provide the compiled code also
 
 > do not throw internal complexities (which should not exist anyway :-) on to the consumer
 
-# 6. assets go into the public folder of your module
+### 6. assets go into the public folder of your module
 
 > this lets the GlintApp Universe bundle the assets. e.g. with [assets-bundler](https://github.com/intesso/assets-bundler)
 
-# 7. define the server technology for your GlintApp Universe
+### 7. define the server technology for your GlintApp Universe
 
 > as much as we like to support everything, architecture also means to make decisions, also to limit our selves to solve the actual problems.
 > e.g. [Express](http://expressjs.com/) or [hapi](http://hapijs.com/) etc.
 
-
-# 8. define commonly used modules for common concepts
+### 8. define commonly used modules for common concepts
 
 > when you design a system, it consists of *structure*s and *concept*s. See [arc42](http://www.arc42.org).
 > typically you want to follow consistent concepts in the different parts of the system (modules). e.g. consistent Logging mechanism.
 > Therefore, make known the conceptual modules, the individual modules shall require.
 
-
-# 9. require no special environment settings
+### 9. require no special environment settings
 
 > be a good neighbour.
 
@@ -384,7 +382,7 @@ TODO e.g.
 
 > When you create many small modules for your application, maybe you don't want to publish them all to npm or have seperate git repositories or share them at all.
 >
-> See [LOCAL_MODULES.md] for suggestions on how to do this.
+> See [LOCAL_MODULES](LOCAL_MODULES.md) for suggestions on how to do this.
 
 
 # author
