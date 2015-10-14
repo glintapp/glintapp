@@ -28,11 +28,14 @@ local modules can be helpful, especially at the application level.
 
 **install dependencies of bundledDependencies**
 > -> npm ignores it
+
 > -> https://github.com/npm/npm/issues/2442 and https://github.com/npm/npm/issues/1983 and http://stackoverflow.com/a/19928749
 
 **install dependencies of local file: dependencies**
 > -> npm does it, yay... but
+
 > -> if you publish a module with local file dependencies, no one else can install this module
+
 > -> except if you also declare it as "bundledDependencies"
 
 **nodemon watch of symlinks**
