@@ -160,12 +160,12 @@ One thing I didn't mention so far is, the documentation as well as the eco syste
 Sure there is great things you can use for the browser.
 For example [duo](http://duojs.org), [webpack](https://webpack.github.io), [bower](http://bower.io/) etc.
 
-Most of them are focussed on the browser only. And don't have reusing node.js code in mind.
+Most of them are focused on the browser only. And don't have reusing node.js code in mind.
 
 There is a recommendable read on the story of normalize.io, which had the nobal goal to normalize the package management [normalize.io](http://www.jongleberry.com/the-story-of-normalize.html).
 
 
-### what about webcomponents, HTTP/2 etc.
+### what about web-components, HTTP/2 etc.
 
 #### HTTP/2
 HTTP/2 has got an influence on how to pack, or not to pack assets for the browser with the Server Push mechanism.
@@ -416,9 +416,9 @@ function MyModule(options) {
 
 # local modules
 
-> When you create many small modules for your application, maybe you don't want to publish them all to npm or have seperate git repositories or share them at all.
+> When you create many small modules for your application, maybe you don't want to publish them all to npm or have separate git repositories or share them at all.
 >
-> See [LOCAL_MODULES](LOCAL_MODULES.md) for suggestions on how to do this.
+> [local_modules](https://github.com/glintapp/local_modules) could be helpful in this case.
 
 
 # author
