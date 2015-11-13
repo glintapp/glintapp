@@ -136,9 +136,9 @@ But do we really need another module registry?
 Why not writing code for the browser as we do for the server and use a tool to make the browser happy?
 James Halliday known as substack created such a tool: [browserify](http://browserify.org)
 Browserify works really great and also solves the problem of writing reusable code for node.js and the browser.
-It even gives you big parts of the node.js API to use in the browser.
-And it does not create another 'universum', where the modules written in/for it, can only be used within this universum.
-Which is great.
+It even gives you big parts of the node.js core API to use in the browser.
+And it does not create another 'universum', where the modules written in/for it can only be used within this universum.
+It is Therefore a great tool to allow code reuse in the server/browser as well as in different projects without adding another big framework, which is great.
 
 With all the problems it solves, it has some things it does not solve by itself, and also adds some new problems:
 - the bundled javascript file can become quite big
