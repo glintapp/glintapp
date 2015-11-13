@@ -227,7 +227,7 @@ We might also ask the question:
 
 [6. assets go into the public folder of your module](#6-assets-go-into-the-public-folder-of-your-module)
 
-[7. define the server technology for your GlintApp Galaxy](#7-define-the-server-technology-for-your-glintapp-universe)
+[7. define the server technology for your GlintApp Galaxy](#7-define-the-server-technology-for-your-glintapp-galaxy)
 
 [8. define commonly used modules for common concepts](#8-define-commonly-used-modules-for-common-concepts)
 
@@ -387,7 +387,7 @@ function MyModule(options) {
 
 ### 4. use widely supported javascript (concerning the browser)
 
-> be supporting, being a bit conservative might not be wrong here (depending on your Universe)
+> be supporting, being a bit conservative might not be wrong here (depending on your Galaxy)
 
 ### 5. if you use transpiler/compiler, make sure you provide the compiled code also
 
@@ -395,9 +395,9 @@ function MyModule(options) {
 
 ### 6. assets go into the public folder of your module
 
-> this lets the GlintApp Universe bundle the assets. e.g. with [assets-bundler](https://github.com/intesso/assets-bundler)
+> this lets the GlintApp Galaxy bundle the assets. e.g. with [assets-bundler](https://github.com/intesso/assets-bundler)
 
-### 7. define the server technology for your GlintApp Universe
+### 7. define the server technology for your GlintApp Galaxy
 
 > as much as we like to support everything, architecture also means to make decisions, also to limit our selves to solve the actual problems.
 > e.g. [Express](http://expressjs.com/) or [hapi](http://hapijs.com/) etc.
