@@ -1,7 +1,7 @@
 <table>
 <tr>
 <td>
-<img src="glintapp-logo.png" alt="GlintApp Logo">
+<img src="img/glintapp-logo.png" alt="GlintApp Logo">
 </td>
 <td>
 
@@ -65,7 +65,7 @@ Small modules help solving (or avoiding) complexity. Which is great. But it does
 <table>
 <tr>
 <td>
-<img src="lego-modules.gif" alt="Composable Modules - LEGO">
+<img src="img/lego-modules.gif" alt="Composable Modules - LEGO">
 found on www.gifbay.com
 </td>
 <td>
