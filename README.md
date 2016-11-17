@@ -433,7 +433,7 @@ Please create an [Issue](https://github.com/glintapp/glintapp/issues/new) or [PR
  - ... please send a PR which adds your implementation ...
 
 # recommended reading
- - [unix philosophy and node]()http://blog.izs.me/post/48281998870/unix-philosophy-and-node-js)
- - [linux and the unix philosophy] ISBN-10: 1555582737
+ - [unix philosophy and node](http://blog.izs.me/post/48281998870/unix-philosophy-and-node-js)
+ - [linux and the unix philosophy](http://www.linuxjournal.com/article/2877) ISBN-10: 1555582737
  - [browserify handbook](https://github.com/substack/browserify-handbook)
  - [arc42](http://www.arc42.org)
